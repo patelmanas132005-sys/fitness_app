@@ -5,7 +5,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+<Routes>
+  <Route path="/" element={<Login />} />
+  <Route path="/register" element={<Register />} />
+  <Route path="/bmi" element={<BMI />} />
+  <Route path="/workout" element={<Workout />} />
+</Routes>
       </Routes>
     </BrowserRouter>
   );
